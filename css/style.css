@@ -43,6 +43,65 @@ a{
 .event-wrapper ul .adobe{border-color: #C1C09B;}
 .event-wrapper ul .marina{border-color: #005D66;}
 
-header{
-	
+/* @group Header */
+
+header
+{
+	text-align: center;
+	color: #dedcb9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	border-bottom: 1px solid #699D04;
+	-moz-box-shadow: inset 0px 0px 11px #111787;
+	-webkit-box-shadow: inset 0px 0px 11px #111787;
+	box-shadow: inset 0px 0px 11px #111787;
+	background-color: #141414;
+	height: 60px;
 }
+header h1
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+header h1 a
+{
+	background-size: auto 100%;
+	display: block;
+}
+
+/* @end */
+
+/* @group Footer */
+
+footer
+{
+	text-align: center;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	height: 24px;
+	overflow: hidden;
+	background-color: #DEDEDE;
+}
+
+/* @end */
+
+/* @group Footer */
+section
+{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 70px; /* heading height + extra */
+	background-color: white;
+}
+
+/* @end */

@@ -1,0 +1,48 @@
+/*****************************
+	COLOR PALETTE
+ 	orange: #ED4732
+	black: #141414
+	mid-gray: #ACACAC
+	light-gray: #DEDEDE
+	white: #F8F8F8
+	green: #5FA4A0
+*****************************/
+
+/* Normalization */
+* {margin:0px;padding:0px;}
+a img{border: none;}
+input{font-family: verdana, sans-serif;}
+textarea{font-family: verdana, sans-serif;}
+p{line-height:1.4em;}
+a {color: #f36b22;text-decoration:none;outline: none;}
+ul{list-style-type: none;}
+
+body{
+	background: #141414;
+	color: #141414;
+	font: 14px/18px normal 'Helvetica Neue', Helvetica, arial, sans-serif;
+}
+a{
+	color: #ED4732;
+	text-decoration: none;
+}
+.event-wrapper ul{
+	width: 96%;
+	background: #F8F8F8;
+}
+.event-wrapper ul li{
+	border-left: 8px solid #fff;
+	padding: 10px 5px;
+	margin-left: 20px;
+}
+.event-wrapper ul .concert{border-color:#F29966;}
+.event-wrapper ul .rose{border-color:#CC9999;}
+.event-wrapper ul .gold{border-color: #CCAD5C;}
+.event-wrapper ul .sea{border-color: #005680;}
+.event-wrapper ul .zen{border-color: #74C499;}
+.event-wrapper ul .adobe{border-color: #C1C09B;}
+.event-wrapper ul .marina{border-color: #005D66;}
+
+header{
+	
+}

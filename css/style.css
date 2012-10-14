@@ -22,7 +22,7 @@ body{
 	color: #141414;
 	font: 14px/18px normal 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
-a{
+a,a:hover{
 	color: #ED4732;
 	text-decoration: none;
 }
@@ -44,5 +44,18 @@ a{
 .event-wrapper ul .marina{border-color: #005D66;}
 
 header{
-	
+	background: #ED4732;
+	min-height: 22px;
+	padding: 6px 0 0 20px;
+	color: #F8F8F8;
+}
+header h1{
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+}
+header a,
+header a:hover{
+	color: #F8F8F8;
 }

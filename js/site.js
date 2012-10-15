@@ -60,6 +60,23 @@ var html5dev = (function(){
 				}
 			});
 			
+		
+			$image_test = $('#image-test');
+			
+			for(i=0; i < html5devconf_data.schedule.length; i++){
+				
+				event_item = html5devconf_data.schedule[i];
+				
+				if(typeof event_item.speaker !== 'undefined' 
+					&& typeof event_item.speaker.image !== 'undefined'){
+					console.log('create img');
+					$img = $('<img>');
+					$img.attr('src',event_item.speaker.image);
+					$image_test.append($img);
+				}
+			}
+			
+			
 			html5dev.update_layout();
 		},
 		update_layout: function()

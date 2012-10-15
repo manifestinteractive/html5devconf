@@ -52,15 +52,14 @@ header{
 	left: 0;
 	width: 100%;
 	z-index: 10000;
-/*
-	-moz-box-shadow: inset 0px 0px 11px #111787;
-	-webkit-box-shadow: inset 0px 0px 11px #111787;
-	box-shadow: inset 0px 0px 11px #111787;
-*/
+	-moz-box-shadow: inset -4px -4px 16px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset -4px -4px 16px rgba(0,0,0,0.5);
+	box-shadow: inset -4px -4px 16px rgba(0,0,0,0.5);
 	background: #ED4732;
 	min-height: 22px;
 	padding: 6px 0 0 20px;
 	color: #F8F8F8;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5), 0 -1px 1px, 0 -1px 1px rgba(0,0,0,0.5), 0 -1px 1px;
 }
 header h1{
 	font-size: 14px;
@@ -91,9 +90,15 @@ footer{
 	left: 0;
 	width: 100%;
 	z-index: 10000;
-	height: 24px;
+	padding: 2px 0;
 	overflow: hidden;
-	background-color: #DEDEDE;
+	background: #ACACAC;
+	font-size: 12px;
+	color: #141414;
+	-moz-box-shadow: inset -4px -4px 20px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset -4px -4px 20px rgba(0,0,0,0.5);
+	box-shadow: inset -4px -4px 20px rgba(0,0,0,0.5);
+	text-shadow: 0 1px 1px rgba(255,255,255,0.5);
 }
 
 /* @end */
@@ -104,7 +109,7 @@ section{
 	padding: 0;
 	position: relative;
 	top: 70px; /* heading height + extra */
-	background-color: white;
+	background: white;
 }
 
 /* @end */

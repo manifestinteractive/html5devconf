@@ -45,13 +45,13 @@ h3{
 	text-align:center;
 }
 
-#event-wrapper ul .concert{border-color:#F29966;}
-#event-wrapper ul .rose{border-color:#CC9999;}
-#event-wrapper ul .gold{border-color: #CCAD5C;}
-#event-wrapper ul .sea{border-color: #005680;}
-#event-wrapper ul .zen{border-color: #74C499;}
-#event-wrapper ul .adobe{border-color: #C1C09B;}
-#event-wrapper ul .marina{border-color: #005D66;}
+#event-wrapper ul .room-grand-ballroom-concert{border-color:#F29966;}
+#event-wrapper ul .room-grand-ballroom-rose{border-color:#CC9999;}
+#event-wrapper ul .room-gold-ballroom{border-color: #CCAD5C;}
+#event-wrapper ul .room-sea-cliff{border-color: #005680;}
+#event-wrapper ul .room-presidio{border-color: #74C499;}
+#event-wrapper ul .room-pacific-heights{border-color: #C1C09B;}
+#event-wrapper ul .room-marina{border-color: #005D66;}
 
 /* @group Header */
 header{

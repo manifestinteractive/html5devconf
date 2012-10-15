@@ -54,10 +54,8 @@ var html5dev = (function(){
 				var $event = $(e.target).closest('.event-item');
 				
 				if($event.length){
-					var id = $event.data('id');
-					// alert(id);
-					
-					html5dev.show_details();
+					var event_id = $event.data('session');
+					html5dev.show_details(event_id);
 				}
 			});
 			
@@ -67,8 +65,13 @@ var html5dev = (function(){
 		{
 			
 		},
-		show_details: function()
+		show_details: function(event_id)
 		{
+			// Populate the details div
+			var event_obj = _.find(html5devconf_data.schedule, function(event) { return event.id == event_id; });
+			
+			alert(event_obj.title);
+			
 			jQuery('section').addClass('flip');
 			return false;
 		},

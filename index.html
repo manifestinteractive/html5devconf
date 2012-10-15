@@ -93,7 +93,7 @@
 						<h3><%= data.time ? data.time : '' %></h3>
 						<ul>
 							<% _.forEach(data.sessions, function(session) { %>
-							<li class="event-item">
+							<li class="event-item" data-session="<%= session.id %>">
 								<div class="event room-<%= session.room ? session.room.toLowerCase().replace(/[^a-z0-9]/g,'-').replace(/--+/g,'-').replace(/-+$/g,'') : '' %>">
 									<% if(session.room){ %>
 									<span class="room-tag " style="position:absolute;right:0;top:0;padding:1px 5px 1px; line-height:12px; border-bottom-left-radius:5px;background:#eee;border:1px solid #dedede;border-top:0;border-right:0;font-size:11px;color:#666;box-shadow: -1px 1px 3px rgba(0,0,0,.05);"><%= session.room %></span>

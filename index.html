@@ -90,9 +90,6 @@
 						<ul>
 							<% _.forEach(data.sessions, function(session) { %>
 							<li class="event-item">
-								<% if(session.room){ %>
-								<h4>Room: <b><%= session.room %></b><h4>
-								<% } %>
 								<div class="event room-<%= session.room ? session.room.toLowerCase().replace(/[^a-z0-9]/,'-') : '' %>">
 									<span class="status">&nbsp;</span>
 									<span class="event-title"><em><%= session.title %></em></span>

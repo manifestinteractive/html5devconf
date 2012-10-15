@@ -340,3 +340,14 @@ and (max-device-width : 480px) {
 	}
 }
 /* @end */
+
+#event-qrcode
+{
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}
+#event-qrcode h3
+{
+	color: #444;
+}

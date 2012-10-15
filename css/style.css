@@ -35,6 +35,11 @@ h3{
 	line-height: 25px;
 	color: #5FA4A0;
 }
+
+#loader {
+	text-align:center;
+}
+
 #event-wrapper ul .concert{border-color:#F29966;}
 #event-wrapper ul .rose{border-color:#CC9999;}
 #event-wrapper ul .gold{border-color: #CCAD5C;}

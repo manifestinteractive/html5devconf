@@ -451,7 +451,7 @@ var html5devconf_data = {
         "title" : "Using Client Side Storage Today",
         "speaker" : {
             "name" : "Parashuram Narasimhan",
-            "image" : "http://html5devconf.com/img/headshots/parashuram_narasimhan.jpg"
+            "image" : "http://html5devconf.com/img/headshots/parashuram.jpg"
         },
         "description" : "",
         "room" : "Grand Ballroom (Rose)",
@@ -620,7 +620,7 @@ var html5devconf_data = {
         "title" : "Say Goodbye to Your Localhost",
         "speaker" : {
             "name" : "David Yasar",
-            "image" : "http://html5devconf.com/img/headshots/david_yasar.jpg"
+            "image" : "http://html5devconf.com/img/headshots/devrim_yasar.jpg"
         },
         "description" : "We will demonstrate how you can build an application that uses 10s of servers without you caring about setting up servers, scaling, load-balancing or any other infrastructure management problem, just using your browsers javascript and relying on services that's built by the community. You can use the same infrastructure when you're ready to deploy to Amazon, Heroku or any other cloud provider. Yes, we will show you how the applications of the future will be built, just using your browser, together with your team.",
         "room" : "Presidio",
@@ -633,7 +633,7 @@ var html5devconf_data = {
         "title" : "Put some Backbone.js  in your Apps",
         "speaker" : {
             "name" : "Sidney Maestre",
-            "image" : "http://html5devconf.com/img/headshots/sidney_maestre.jpg"
+            "image" : "http://html5devconf.com/img/headshots/sid_maestre.jpg"
         },
         "description" : "When developing HTML5 application, your code is bound to get more complex over time.  Employing design patterns like MVC are important for separating concerns and creating more modular and reusable code.  Backbone.js is one of the more popular JavaScript frameworks to help you do this.  Unfortunately, like most open source, the documentation is a work in progress.  Don't worry, I'll walk you through a series of examples that build on each other as I show how the moving parts work together.  As a bonus, we'll add the StackMob JavaScript SDK to persist you data in the cloud in minutes.",
         "room" : "Grand Ballroom (Concert)",
@@ -672,7 +672,7 @@ var html5devconf_data = {
         "title" : "Content vs. Configuration: HTML5 in a CMS",
         "speaker" : {
             "name" : "Jen Lampton",
-            "image" : "http://html5devconf.com/img/headshots/jen_lampton.jpg"
+            "image" : "http://html5devconf.com/img/headshots/jennifer_lampton.jpg"
         },
         "description" : "There are many different kinds of websites out there, and each one may need to use HTML5 in slightly different ways.  When designing a Content Management System that can support any type of website, where can you assume which tags should be used, and where do you need to build a user-interface for selecting specific tags?Come hear about some of the challenges encountered when updating Drupal 8 to use HTML5, and see some of today's solutions for making the markup for this CMS a little smarter. Since we're currently designing a new user-interface for the next release of this popular CMS, I'd also like your feedback on how much configuration is too much, and where it's essential for the user interface to provide different choices.",
         "room" : "Sea Cliff",
@@ -776,7 +776,7 @@ var html5devconf_data = {
         "title" : "Using Open-Source Tools and Libraries to Build Living, Breathing Systems in Your Browser",
         "speaker" : {
             "name" : "Julie Ann Horvath",
-            "image" : "http://html5devconf.com/img/headshots/julie_ann_horvath.jpg"
+            "image" : "http://html5devconf.com/img/headshots/julie_horvath.jpg"
         },
         "description" : "I've seen the future, and it's not in that layered .psd your designer just handed you. As designers and developers, we build things. And we do it often. But we don't build websites or apps. We build systems. Systems that evolve and grow with a company, its users, and both of their needs. The way we design and build these systems should reflect the living, breathing things we want to create and additionally, leave room for them to grow. The question is how do we make this happen with static assets?The answer is we set them all on fire. And start in the future. We start in the browser.Learn how to use GitHub and other open-source tools and libraries to build living, breathing systems in your browser.",
         "room" : "Grand Ballroom (Rose)",
@@ -789,7 +789,7 @@ var html5devconf_data = {
         "title" : "Finding Closure from jQuery: Steps to Begin Closure Tools",
         "speaker" : {
             "name" : "Rhys Brett-Bowen",
-            "image" : "http://html5devconf.com/img/headshots/rhys_brett_bowen.jpg"
+            "image" : "http://html5devconf.com/img/headshots/rhys_bowen.jpg"
         },
         "description" : "This talk will take you through some of the fundamentals of using Closure Tools and how to easily get started. Closure Tools is a set of tools open sourced by Google in 2009. It has been used to build large applications and was designed for large teams working together. Now you can use it for smaller projects using your existing jQuery and MV* knowledge. Setup is made easy using Plovr, jQuery like interface to DOM functions through \"the G\" and MV* operations through PlastronJS - and it all compiles in advanced mode giving you more code for less bytes down the wire.",
         "room" : "Presidio",
@@ -841,7 +841,7 @@ var html5devconf_data = {
         "title" : "From Links to API's: the Future Web of Applications",
         "speaker" : {
             "name" : "Brett Van Zuiden",
-            "image" : "http://html5devconf.com/img/headshots/brett_van_zuiden.jpg"
+            "image" : "http://html5devconf.com/img/headshots/brett_zuiden.jpg"
         },
         "description" : "The internet as we know it was built on top of the notion of links between static documents - with the rise of HTML5 and true Applications on the internet, there's a need for a whole new set of protocols and semantics to create the next Web of applications. We'll take a look at what's coming down the pipe and what still needs to happen to combat walled gardens and create a platform for interoperability.",
         "room" : "Presidio",
@@ -867,7 +867,7 @@ var html5devconf_data = {
         "title" : "Mobile Development Options",
         "speaker" : {
             "name" : "Patrik Patel",
-            "image" : "http://html5devconf.com/img/headshots/patrik_patel.jpg"
+            "image" : "http://html5devconf.com/img/headshots/pratik_patel.jpg"
         },
         "description" : "Mobile development is hot - and there's a bevy of options for developing mobile apps. If you're looking at cross-platform solutions, there's a multitude of options to choose from. In this session we'll explore the three basic categories for developing mobile apps: native, cross-platform-to-native, and mobile web. We'll discuss the sweet spot for each of these three approaches and the benefits and drawbacks of each. Technologies discussed include Android, iOS, HTML5/CSS3, Phonegap, Titanium, and jQuery Mobile.",
         "room" : "Sea Cliff",
@@ -906,7 +906,7 @@ var html5devconf_data = {
         "title" : "Javascript for Single Page Web Applications",
         "speaker" : {
             "name" : "Mike Mikowski",
-            "image" : "http://html5devconf.com/img/headshots/mike_mikowski.jpg"
+            "image" : "http://html5devconf.com/img/headshots/michael_mikowski.jpg"
         },
         "description" : "The presentation covers concepts and JavaScript techniques you need to know to develop Single Page Web Apps that are scaleable, modular, maintainable, effective, and fast.",
         "room" : "Marina",
@@ -1062,7 +1062,7 @@ var html5devconf_data = {
         "title" : "Nuby-Express: Building Industrial Scale Rad With Node and Express",
         "speaker" : {
             "name" : "David Edelhart",
-            "image" : "http://html5devconf.com/img/headshots/david_edelhart.jpg"
+            "image" : "http://html5devconf.com/img/headshots/dave_edelhart.jpg"
         },
         "description" : "nuby-express is designed to enhance the development experience for producing large scale applications while minimizing the diseconomies of scale that can be the consequence of functional style programming. If you want to produce large systems with self contained resources, or are looking for a way to exploit file based configuration the way MVC apps have been doing in systems like Rails and Zend Framework, nuby-express is for you.",
         "room" : "Pacific Heights",
@@ -1257,7 +1257,7 @@ var html5devconf_data = {
         "title" : "Designing Javascript APIs",
         "speaker" : {
             "name" : "Liyan Chang",
-            "image" : "http://html5devconf.com/img/headshots/liyan_chang.jpg"
+            "image" : "http://html5devconf.com/img/headshots/lian_chang.jpg"
         },
         "description" : "As web applications become more important, javascript libraries for APIs are going to be serious business. We'll be talking about some of the things we've learned along the way about javascript API design: performance, design patterns, and versioning.",
         "room" : "Pacific Heights",

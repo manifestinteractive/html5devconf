@@ -62,7 +62,7 @@ header{
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 10000;
+	z-index: 100 !important;
 	border-bottom: 1px solid #ED4732;
 	background: #F1652A;
 	min-height: 22px;
@@ -104,6 +104,7 @@ section{
 	position: absolute;
 	top: 35px;
 	left: 0;
+	z-index: 10 !important;
 }
 #event-wrapper{
 	padding: 0 0 50px;
@@ -266,7 +267,7 @@ footer{
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	z-index: 10000;
+	z-index: 100;
 	padding: 2px 0;
 	overflow: hidden;
 	background: #ACACAC;

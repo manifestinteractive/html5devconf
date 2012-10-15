@@ -102,7 +102,7 @@ section{
 	width: 90%;
 	margin: 0 0 0 20px;
 }
-#event-wrapper .event_item{
+#event-wrapper .event-item{
 	border: 1px solid #DEDEDE;
 	position: relative;
 	margin-top: -1px;
@@ -141,9 +141,22 @@ section{
 #event-details #actions .btn-group{
 	margin: 0 0 20px;
 }
+#event-details #interested-btn.active{
+	background-image: -webkit-linear-gradient(bottom,white,#E6E6E6);
+	background-image: -o-linear-gradient(bottom,white,#E6E6E6);
+	background-image: linear-gradient(to top,white,#E6E6E6);
+	background-image: -moz-linear-gradient(bottom,white,#E6E6E6);
+	background-repeat: repeat-x;
+}
+#event-details #interested-btn.active span:before{
+	content:  "\2713 ";
+	color: #5FA4A0;
+	margin: 0 5px 0 0;
+}
 #event-details .event-title{
 	font-weight: bold;
 }
+#event-details #interested-btn
 /* @end */
 
 /* @group Footer */

@@ -20,8 +20,8 @@ var html5devconf_data = {
     },
     {
         "id" : 3,
-        "title" : "Break",
-        "description" : "Refreshments for all provided on the 2nd floor",
+        "title" : "Break <span class='secondary'>(Refreshments for all provided on the 2nd floor)</span>",
+        "description" : "",
         "room" : "",
         "time" : "10:00am - 10:30am",
         "sponsor" : "",
@@ -29,8 +29,8 @@ var html5devconf_data = {
     },
     {
         "id" : 4,
-        "title" : "Break",
-        "description" : "Refreshments for all provided on the 2nd floor",
+        "title" : "Break <span class='secondary'>(Refreshments for all provided on the 2nd floor)</span>",
+        "description" : "",
         "room" : "",
         "time" : "10:00am - 10:30am",
         "sponsor" : "",
@@ -38,8 +38,8 @@ var html5devconf_data = {
     },
     {
         "id" : 5,
-        "title" : "Break",
-        "description" : "Refreshments for all provided on the 2nd floor",
+        "title" : "Break <span class='secondary'>(Refreshments for all provided on the 2nd floor)</span>",
+        "description" : "",
         "room" : "",
         "time" : "3:10pm - 3:40pm",
         "sponsor" : "",
@@ -47,8 +47,8 @@ var html5devconf_data = {
     },
     {
         "id" : 6,
-        "title" : "Break",
-        "description" : "Refreshments for all provided on the 2nd floor",
+        "title" : "Break <span class='secondary'>(Refreshments for all provided on the 2nd floor)</span>",
+        "description" : "",
         "room" : "",
         "time" : "3:10pm - 3:40pm",
         "sponsor" : "",
@@ -56,8 +56,8 @@ var html5devconf_data = {
     },
     {
         "id" : 7,
-        "title" : "Lunch",
-        "description" : "Those that purchased lunch will be hosted in the French Parlor room",
+        "title" : "Lunch <span class='secondary'>(Those that purchased lunch will be hosted in the French Parlor room)</span>",
+        "description" : "",
         "room" : "",
         "time" : "12:20pm - 1:20pm",
         "sponsor" : "",
@@ -65,8 +65,8 @@ var html5devconf_data = {
     },
     {
         "id" : 8,
-        "title" : "Lunch",
-        "description" : "Those that purchased lunch will be hosted in the French Parlor room",
+        "title" : "Lunch <span class='secondary'>(Those that purchased lunch will be hosted in the French Parlor room)</span>",
+        "description" : "",
         "room" : "",
         "time" : "12:20pm - 1:20pm",
         "sponsor" : "",
@@ -81,24 +81,6 @@ var html5devconf_data = {
         },
         "description" : "We rarely talk about the actual mechanics of how we develop webapps, but in this session, we'll get into some new techniques  people use to improve their experience. Iterating faster, avoiding bugs through tools, and improved automated testing are great ideas, but in this talk we'll see how to really incorporate them into a functional and realistic developer workflow.",
         "room" : "Grand Ballroom",
-        "time" : "9:00am - 10:00am",
-        "sponsor" : "",
-        "day" : 2
-    },
-    {
-        "id" : 10,
-        "title" : "Keynote Simulcast",
-        "description" : "",
-        "room" : "Gold Ballroom",
-        "time" : "9:00am - 10:00am",
-        "sponsor" : "",
-        "day" : 1
-    },
-    {
-        "id" : 11,
-        "title" : "Keynote Simulcast",
-        "description" : "",
-        "room" : "Gold Ballroom",
         "time" : "9:00am - 10:00am",
         "sponsor" : "",
         "day" : 2
@@ -120,7 +102,7 @@ var html5devconf_data = {
         "id" : 13,
         "title" : "The Beauty of Constraints",
         "speaker" : {
-            "name" : "Faruk Ateş",
+            "name" : "Faruk Ates",
             "image" : "http://html5devconf.com/img/headshots/faruk_ates.jpg"
         },
         "description" : "Making any product is an exciting as well as challenging endeavor, especially in technology and software. As humans we are prone to let our creativity run free — but freedom is not always the best solution to solving problems. Sometimes we need constraints more than anything else to truly ignite our creativity.In his session, Faruk will talk about the values and lessons learned from imposing (sometimes arbitrary) constraints on projects, applied against UI, software, and API design.",
@@ -1295,5 +1277,23 @@ var html5devconf_data = {
         "time" : "5:40 - 6:30pm",
         "sponsor" : "",
         "day" : 1
+    },
+    {
+        "id" : 10,
+        "title" : "Keynote Simulcast",
+        "description" : "",
+        "room" : "Gold Ballroom",
+        "time" : "9:00am - 10:00am",
+        "sponsor" : "",
+        "day" : 1
+    },
+    {
+        "id" : 11,
+        "title" : "Keynote Simulcast",
+        "description" : "",
+        "room" : "Gold Ballroom",
+        "time" : "9:00am - 10:00am",
+        "sponsor" : "",
+        "day" : 2
     }]
 };

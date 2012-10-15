@@ -46,34 +46,6 @@
 			</div>
 	        
 	        <div id="event-details">
-	            <ul class="pager">
-	                <li class="previous">
-	                    <a href="#" onclick="html5dev.hide_details(); return false;">&larr; Back</a>
-	                </li>
-	            </ul>
-	            
-	            <div id="actions">
-					<div class="btn-group" data-toggle="buttons-checkbox">
-						<button id="interested-btn" type="button" class="btn"><span>Interested</span></button>
-					</div>
-	            </div>
-	            
-	            <div class="event-title">Cache is King</div>
-	            
-	            <div class="event-description">This is my event description</div>
-	            
-	            <div class="speaker">
-	                
-	                <div class="speaker-pic">
-	                    <img src="http://html5devconf.com/img/headshots/paul_irish.jpg"/>
-	                </div>
-	                
-	                <span class="speaker-name">Paul Irish</span>
-	                <span class="speaker-company">Google</span>
-	                <span class="speaker-title">Cool Dude</span>
-	                <span class="speaker-bio">my bio</span>
-	                
-	            </div>    
 	        </div>
 			
 		</section>
@@ -84,7 +56,7 @@
 			Brought to you by Answers.com
 		</footer>
 			
-		<script id="calendar-template" type="template/javascript">
+		<script id="event-list-template" type="template/javascript">
 			<li>
 				<h2><%= title ? title : '' %></h2>
 				<ul>
@@ -93,7 +65,7 @@
 						<h3><%= data.time ? data.time : '' %></h3>
 						<ul>
 							<% _.forEach(data.sessions, function(session) { %>
-							<li class="event-item" data-session="<%= session.id %>" id="event_<%= session.id %>">
+							<li class="event-item" data-id="<%= session.id %>" id="event_<%= session.id %>">
 								<div class="event room-<%= session.room ? session.room.toLowerCase().replace(/[^a-z0-9]/g,'-').replace(/--+/g,'-').replace(/-+$/g,'') : '' %>">
 									<% if(session.room){ %>
 									<span class="room-tag " style="position:absolute;right:0;top:0;padding:1px 5px 1px; line-height:12px; border-bottom-left-radius:5px;background:#eee;border:1px solid #dedede;border-top:0;border-right:0;font-size:11px;color:#666;box-shadow: -1px 1px 3px rgba(0,0,0,.05);"><%= session.room %></span>
@@ -114,6 +86,46 @@
 					<% }); %>
 				</ul>
 			</li>
+		</script>
+		<script id="event-detail-template" type="template/javascript">
+			<div data-id="<%= data.id %>">
+	            <ul class="pager">
+	                <li class="previous">
+	                    <a href="#" onclick="html5dev.hide_details(); return false;">&larr; Back</a>
+	                </li>
+	            </ul>
+	            
+	            <div id="actions">
+					<div class="btn-group" data-toggle="buttons-checkbox">
+						<button id="interested-btn" type="button" class="btn active"><span>Interested</span></button>
+					</div>
+	            </div>
+	            
+	            <% if( data.speaker ){ %>
+	            <div class="speaker">
+	                
+	                <div class="speaker-pic">
+	                	<% if( data.speaker.image ){ %>
+	                    <img src="<%= data.speaker.image %>"/>
+	                    <% } %>
+	                </div>
+	                
+	                <span class="speaker-name"><%= data.speaker.name ? data.speaker.name : '' %></span>
+	                <span class="speaker-company"><%= data.sponsor ? data.sponsor : '' %></span>
+	                <% if(data.speaker.title){ %>
+	                <span class="speaker-title"><%= data.speaker.title ? data.speaker.title : '' %></span>
+	                <% } %>
+	                <% if(data.speaker.bio){ %>
+	                <span class="speaker-bio"><%= data.speaker.bio ? data.speaker.bio : '' %></span>
+	                <% } %>
+	                
+	            </div>
+	            <% } %>
+	            
+	            <div class="event-title"><%= data.title ? data.title : '' %></div>
+	            
+	            <div class="event-description"><%= data.description ? data.description : '' %></div>
+			</div>
 		</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>

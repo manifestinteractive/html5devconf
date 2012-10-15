@@ -73,7 +73,7 @@ header{
 header h1{
 	font-size: 18px;
 	line-height: 23px;
-	margin: 0;
+	margin: 0 0 5px;
 	padding: 0;
 	display: block;
 	width: 100%;
@@ -101,7 +101,7 @@ section{
 	margin: 0 auto;
 	float: none;
 	position: absolute;
-	top: 30px;
+	top: 35px;
 	left: 0;
 }
 #event-wrapper{
@@ -174,6 +174,7 @@ section{
 }
 #event-details .event-description{
 	margin: 0 0 10px;
+	line-height: 18px;
 }
 #event-details .speaker-pic{
 	float: left;
@@ -182,6 +183,9 @@ section{
 	height: 95px;
 	overflow: hidden;
 	margin: 0 10px 10px 0;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 #event-details .speaker-pic img{
 	width: 95px;
@@ -270,6 +274,9 @@ section #event-details {
 section.flip #event-details {
 	-webkit-transform: rotateX(0deg) rotateY(0deg);
 }
+#loader{
+	margin-top: 180px;
+}
 
 /* @group media queries for mobile */
 @media only screen 
@@ -281,9 +288,13 @@ and (max-device-width : 480px) {
 	header h1{
 		font-size: 14px;
 		line-height: 18px;
+		margin-bottom: 0;
 	}
 	#event-wrapper .event-title{
 		margin-right: 0;
+	}
+	section{
+		top: 30px;
 	}
 }
 /* @end */

@@ -103,6 +103,17 @@
 					</div>
 	            </div>
 	            
+	            <% if( ! data.speaker){ %>
+	            	<% if(data.day == 1){ %>
+		            	<span class="event-date">Oct 15th, </span>
+		            <% } else { %>
+		            	<span class="event-date">Oct 16th, </span>
+		            <% } %>
+		            
+		            <span class="event-time"><%= data.time %></span>
+		            <span class="event-room"><%= data.room %></span>
+	            <% } %>
+	            
 	            <% if( data.speaker ){ %>
 	            <div class="speaker">
 	                
@@ -113,13 +124,15 @@
 	                </div>
 	                
 	                <span class="speaker-name"><%= data.speaker.name ? data.speaker.name : '' %></span>
-	                <span class="speaker-company"><%= data.sponsor ? data.sponsor : '' %></span>
-	                <% if(data.speaker.title){ %>
-	                <span class="speaker-title"><%= data.speaker.title ? data.speaker.title : '' %></span>
-	                <% } %>
-	                <% if(data.speaker.bio){ %>
-	                <span class="speaker-bio"><%= data.speaker.bio ? data.speaker.bio : '' %></span>
-	                <% } %>
+	                
+	                <% if(data.day == 1){ %>
+		            	<span class="event-date">Oct 15th, </span>
+		            <% } else { %>
+		            	<span class="event-date">Oct 16th, </span>
+		            <% } %>
+		            
+		            <span class="event-time"><%= data.time %></span>
+		            <span class="event-room"><%= data.room %></span>
 	                
 	            </div>
 	            <% } %>

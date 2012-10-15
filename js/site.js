@@ -83,12 +83,13 @@ var html5dev = (function(){
 			// alert(event_obj.title);
 			
 			jQuery('section').addClass('flip');
-			return false;
+			setTimeout(function(){ jQuery('#event-wrapper').hide(); }, 250);
 		},
 		hide_details: function()
 		{
-			jQuery('section').removeClass('flip');
-			return false;
+			jQuery('#event-wrapper').show();
+			setTimeout(function(){ jQuery('section').removeClass('flip'); }, 250);
+			
 		}
 	}
 })();

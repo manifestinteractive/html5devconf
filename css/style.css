@@ -98,12 +98,51 @@ section{
 	width: 96%;
 	margin: 0 auto;
 }
+#event-wrapper ul ul ul{
+	width: 90%;
+	margin: 0 0 0 20px;
+}
 #event-wrapper .event_item{
 	border: 1px solid #DEDEDE;
+	position: relative;
+	margin-top: -1px;
 }
 #event-wrapper .event{
 	border-left: 8px solid #fff;
 	padding: 10px 5px 10px 0;
+}
+#event-wrapper .event-title{
+	display: block;
+	font-weight: bold;
+	margin: 0 10px;
+}
+#event-wrapper .speaker-name,
+#event-wrapper .speaker-company{
+	color: #ACACAC;
+	font-size: 12px;
+	margin: 0 0 0 10px;
+}
+#event-wrapper .status{
+	position: absolute;
+	left: -25px;
+	top: 17px;
+	color: #5FA4A0;
+	font-size: 28px;
+}
+#event-wrapper .checked:before {
+   content:  "\2713 ";
+}
+/* @end */
+/* @group */
+#event-details{
+	width: 90%;
+	margin: 0 auto;
+}
+#event-details #actions .btn-group{
+	margin: 0 0 20px;
+}
+#event-details .event-title{
+	font-weight: bold;
 }
 /* @end */
 

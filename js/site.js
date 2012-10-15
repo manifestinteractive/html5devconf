@@ -1,6 +1,8 @@
 var html5dev = (function(){
 
-	var vars = {};
+	var vars = {
+		interested: []
+	};
 
 	var elements = {};
 
@@ -16,14 +18,16 @@ var html5dev = (function(){
 	};
 
 	return {
+		is_interested: function(session_id){
+			return _.indexOf(vars.interested, session_id) !== -1;
+		},
 		init: function()
 		{
-			var store = null;
-
 			if('localStorage' in window && window['localStorage'] !== null){
-				//store = window.localStorage;
-				//store.get('my_schedule');
-				//my_events = store.get('my_events');
+				var interested = window.localStorage.getItem('interested');
+				if( interested ){
+					vars.interested = JSON.parse(interested);
+				}
 			}
 
 			// Populate JSON object with user preferences for event attendence
@@ -59,7 +63,23 @@ var html5dev = (function(){
 					html5dev.show_details(id);
 				}
 			});
-
+			
+			$('#interested-btn').live('click',function(){
+				var $this = $(this);
+				var interested = $this.is('.active');
+				var id = $this.closest('.event-detail-root').data('id');
+				if( interested ){
+					vars.interested.push(id);
+					$('#event_'+id+' .status').addClass('checked');
+				}else{
+					vars.interested = _.filter(vars.interested, function(session_id){ return session_id != id; });
+					$('#event_'+id+' .status').removeClass('checked');
+				}
+				if('localStorage' in window && window['localStorage'] !== null){
+					window.localStorage.setItem('interested', JSON.stringify(vars.interested));
+				}
+			});
+			
 			html5dev.update_layout();
 		},
 		update_layout: function()

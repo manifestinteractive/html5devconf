@@ -52,6 +52,7 @@ h3{
 #event-wrapper ul .room-presidio{border-color: #74C499;}
 #event-wrapper ul .room-pacific-heights{border-color: #C1C09B;}
 #event-wrapper ul .room-marina{border-color: #005D66;}
+#event-wrapper ul .room-grand-ballroom{border-color: #F29966;}
 
 /* @group Header */
 header{
@@ -73,7 +74,7 @@ header{
 header h1{
 	font-size: 18px;
 	line-height: 23px;
-	margin: 0;
+	margin: 0 0 5px;
 	padding: 0;
 	display: block;
 	width: 100%;
@@ -101,7 +102,7 @@ section{
 	margin: 0 auto;
 	float: none;
 	position: absolute;
-	top: 30px;
+	top: 35px;
 	left: 0;
 	z-index: 10 !important;
 }
@@ -142,7 +143,7 @@ section{
 #event-wrapper .status{
 	position: absolute;
 	left: -32px;
-	top: 12px;
+	top: 22px;
 	color: #5FA4A0;
 	font-size: 32px;
 }
@@ -175,6 +176,7 @@ section{
 }
 #event-details .event-description{
 	margin: 0 0 10px;
+	line-height: 18px;
 }
 #event-details .speaker-pic{
 	float: left;
@@ -183,6 +185,9 @@ section{
 	height: 95px;
 	overflow: hidden;
 	margin: 0 10px 10px 0;
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 #event-details .speaker-pic img{
 	width: 95px;
@@ -191,11 +196,36 @@ section{
 	display: block;
 }
 #event-details .speaker-name{
+	display: block;
 	font-weight: bold;
-	float: left;
-	margin: 21px 0 2px 18px;
+	margin: 21px 0 5px 18px;
 	font-size: 16px;
 	font-style: italic;
+}
+#event-details .event-info{
+	float: left;
+}
+#event-details .event-info-solo{
+	float: left;
+	clear: left;
+	padding: 30px 0;
+}
+#event-details .event-info-solo .event-date,
+#event-details .event-info-solo .event-time,
+#event-details .event-info-solo .event-room{
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0;
+}
+#event-details .event-date,
+#event-details .event-time,
+#event-details .event-room{
+	display: block;
+	margin: 0 0 0 18px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #5FA4A0;
+	font-weight: bold;
 }
 #event-details .speaker-company,
 #event-details .speaker-title{
@@ -271,6 +301,9 @@ section #event-details {
 section.flip #event-details {
 	-webkit-transform: rotateX(0deg) rotateY(0deg);
 }
+#loader{
+	margin-top: 180px;
+}
 
 /* @group media queries for mobile */
 @media only screen 
@@ -282,9 +315,13 @@ and (max-device-width : 480px) {
 	header h1{
 		font-size: 14px;
 		line-height: 18px;
+		margin-bottom: 0;
 	}
 	#event-wrapper .event-title{
 		margin-right: 0;
+	}
+	section{
+		top: 30px;
 	}
 }
 /* @end */

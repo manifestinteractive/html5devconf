@@ -71,7 +71,7 @@
 									<% if(session.room){ %>
 									<span class="room-tag " style="position:absolute;right:0;top:0;padding:1px 5px 1px; line-height:12px; border-bottom-left-radius:5px;background:#eee;border:1px solid #dedede;border-top:0;border-right:0;font-size:11px;color:#666;box-shadow: -1px 1px 3px rgba(0,0,0,.05);"><%= session.room %></span>
 									<% } %>
-									<span class="status">&nbsp;</span>
+									<span class="status <% if(html5dev.is_interested(session.id)){ %> checked<% } %>">&nbsp;</span>
 									<span class="event-title"><em><%= session.title %></em></span>
 									<% if(session.speaker && session.speaker.name){ %>
 									<span class="speaker-name"><%= session.speaker.name %></span>
@@ -90,7 +90,7 @@
 		</script>
 		<script id="event-detail-template" type="template/javascript">
 			<a name="event-detail-<%= data.id %>"></a>
-			<div data-id="<%= data.id %>">
+			<div class="event-detail-root" data-id="<%= data.id %>">
 	            <ul class="pager">
 	                <li class="previous">
 	                    <a href="#event" onclick="html5dev.hide_details(<%= data.id %>); return false;">&larr; Back</a>
@@ -99,28 +99,44 @@
 	            
 	            <div id="actions">
 					<div class="btn-group" data-toggle="buttons-checkbox">
-						<button id="interested-btn" type="button" class="btn active"><span>Interested</span></button>
+						<button id="interested-btn" type="button" class="btn<% if(html5dev.is_interested(data.id)){ %> active<% } %>"><span>Interested</span></button>
 					</div>
 	            </div>
 	            
+	            <% if( ! data.speaker){ %>
+	            	<div class="event-info-solo">
+		            	<% if(data.day == 1){ %>
+			            	<span class="event-date">Oct 15th, </span>
+			            <% } else { %>
+			            	<span class="event-date">Oct 16th, </span>
+			            <% } %>
+			            
+			            <span class="event-time"><%= data.time %></span>
+			            <span class="event-room"><%= data.room %></span>
+		            </div>
+	            <% } %>
+	            
 	            <% if( data.speaker ){ %>
-	            <div class="speaker">
-	                
-	                <div class="speaker-pic">
-	                	<% if( data.speaker.image ){ %>
-	                    <img src="<%= data.speaker.image %>"/>
-	                    <% } %>
+		            <div class="speaker">
+		                
+		                <div class="speaker-pic">
+		                	<% if( data.speaker.image ){ %>
+		                    <img src="<%= data.speaker.image %>"/>
+		                    <% } %>
+		                </div>
+		                <div class="event-info">
+			                <span class="speaker-name"><%= data.speaker.name ? data.speaker.name : '' %></span>
+			                
+			                <% if(data.day == 1){ %>
+				            	<span class="event-date">Oct 15th, </span>
+				            <% } else { %>
+				            	<span class="event-date">Oct 16th, </span>
+				            <% } %>
+				            
+				            <span class="event-time"><%= data.time %></span>
+				            <span class="event-room"><%= data.room %></span>
+				        </div>
 	                </div>
-	                
-	                <span class="speaker-name"><%= data.speaker.name ? data.speaker.name : '' %></span>
-	                <span class="speaker-company"><%= data.sponsor ? data.sponsor : '' %></span>
-	                <% if(data.speaker.title){ %>
-	                <span class="speaker-title"><%= data.speaker.title ? data.speaker.title : '' %></span>
-	                <% } %>
-	                <% if(data.speaker.bio){ %>
-	                <span class="speaker-bio"><%= data.speaker.bio ? data.speaker.bio : '' %></span>
-	                <% } %>
-	                
 	            </div>
 	            <% } %>
 	            

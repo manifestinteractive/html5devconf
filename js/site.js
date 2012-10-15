@@ -54,10 +54,8 @@ var html5dev = (function(){
 				var $event = $(e.target).closest('.event-item');
 				
 				if($event.length){
-					var id = $event.data('id');
-					// alert(id);
-					
-					html5dev.show_details();
+					var event_id = $event.data('session');
+					html5dev.show_details(event_id);
 				}
 			});
 			
@@ -67,8 +65,23 @@ var html5dev = (function(){
 		{
 			
 		},
-		show_details: function()
+		show_details: function(event_id)
 		{
+			// Populate the details div
+			var event_obj = _.find(html5devconf_data.schedule, function(event_item) { return event_item.id == event_id; });
+			
+			$details = $('#event-details');
+			
+			$details.find('.event-title').text(event_obj.title);
+			$details.find('.event-description').text(event_obj.description);
+			
+			$details.find('.speaker-name').text(event_obj.speaker.name);
+			$details.find('.speaker-pic img').attr('src',event_obj.speaker.image);
+			
+			
+			
+			// alert(event_obj.title);
+			
 			jQuery('section').addClass('flip');
 			return false;
 		},

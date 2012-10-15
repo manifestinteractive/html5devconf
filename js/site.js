@@ -55,7 +55,9 @@ var html5dev = (function(){
 				
 				if($event.length){
 					var id = $event.data('id');
-					alert(id);
+					// alert(id);
+					
+					html5dev.show_details();
 				}
 			});
 			

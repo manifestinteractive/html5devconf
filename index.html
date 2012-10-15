@@ -66,11 +66,12 @@
 						<ul>
 							<% _.forEach(data.sessions, function(session) { %>
 							<li class="event-item" data-id="<%= session.id %>" id="event_<%= session.id %>">
+								<a name="event-<%= session.id %>"></a>
 								<div class="event room-<%= session.room ? session.room.toLowerCase().replace(/[^a-z0-9]/g,'-').replace(/--+/g,'-').replace(/-+$/g,'') : '' %>">
 									<% if(session.room){ %>
 									<span class="room-tag " style="position:absolute;right:0;top:0;padding:1px 5px 1px; line-height:12px; border-bottom-left-radius:5px;background:#eee;border:1px solid #dedede;border-top:0;border-right:0;font-size:11px;color:#666;box-shadow: -1px 1px 3px rgba(0,0,0,.05);"><%= session.room %></span>
 									<% } %>
-									<span class="status">&nbsp;</span>
+									<span class="status <% if(html5dev.is_interested(session.id)){ %> checked<% } %>">&nbsp;</span>
 									<span class="event-title"><em><%= session.title %></em></span>
 									<% if(session.speaker && session.speaker.name){ %>
 									<span class="speaker-name"><%= session.speaker.name %></span>
@@ -88,16 +89,17 @@
 			</li>
 		</script>
 		<script id="event-detail-template" type="template/javascript">
-			<div data-id="<%= data.id %>">
+			<a name="event-detail-<%= data.id %>"></a>
+			<div class="event-detail-root" data-id="<%= data.id %>">
 	            <ul class="pager">
 	                <li class="previous">
-	                    <a href="#" onclick="html5dev.hide_details(); return false;">&larr; Back</a>
+	                    <a href="#" onclick="html5dev.hide_details(<%= data.id %>); return false;">&larr; Back</a>
 	                </li>
 	            </ul>
 	            
 	            <div id="actions">
 					<div class="btn-group" data-toggle="buttons-checkbox">
-						<button id="interested-btn" type="button" class="btn active"><span>Interested</span></button>
+						<button id="interested-btn" type="button" class="btn<% if(html5dev.is_interested(data.id)){ %> active<% } %>"><span>Interested</span></button>
 					</div>
 	            </div>
 	            

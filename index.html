@@ -104,36 +104,39 @@
 	            </div>
 	            
 	            <% if( ! data.speaker){ %>
-	            	<% if(data.day == 1){ %>
-		            	<span class="event-date">Oct 15th, </span>
-		            <% } else { %>
-		            	<span class="event-date">Oct 16th, </span>
-		            <% } %>
-		            
-		            <span class="event-time"><%= data.time %></span>
-		            <span class="event-room"><%= data.room %></span>
+	            	<div class="event-info-solo">
+		            	<% if(data.day == 1){ %>
+			            	<span class="event-date">Oct 15th, </span>
+			            <% } else { %>
+			            	<span class="event-date">Oct 16th, </span>
+			            <% } %>
+			            
+			            <span class="event-time"><%= data.time %></span>
+			            <span class="event-room"><%= data.room %></span>
+		            </div>
 	            <% } %>
 	            
 	            <% if( data.speaker ){ %>
-	            <div class="speaker">
-	                
-	                <div class="speaker-pic">
-	                	<% if( data.speaker.image ){ %>
-	                    <img src="<%= data.speaker.image %>"/>
-	                    <% } %>
+		            <div class="speaker">
+		                
+		                <div class="speaker-pic">
+		                	<% if( data.speaker.image ){ %>
+		                    <img src="<%= data.speaker.image %>"/>
+		                    <% } %>
+		                </div>
+		                <div class="event-info">
+			                <span class="speaker-name"><%= data.speaker.name ? data.speaker.name : '' %></span>
+			                
+			                <% if(data.day == 1){ %>
+				            	<span class="event-date">Oct 15th, </span>
+				            <% } else { %>
+				            	<span class="event-date">Oct 16th, </span>
+				            <% } %>
+				            
+				            <span class="event-time"><%= data.time %></span>
+				            <span class="event-room"><%= data.room %></span>
+				        </div>
 	                </div>
-	                
-	                <span class="speaker-name"><%= data.speaker.name ? data.speaker.name : '' %></span>
-	                
-	                <% if(data.day == 1){ %>
-		            	<span class="event-date">Oct 15th, </span>
-		            <% } else { %>
-		            	<span class="event-date">Oct 16th, </span>
-		            <% } %>
-		            
-		            <span class="event-time"><%= data.time %></span>
-		            <span class="event-room"><%= data.room %></span>
-	                
 	            </div>
 	            <% } %>
 	            

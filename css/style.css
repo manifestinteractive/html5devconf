@@ -52,6 +52,7 @@ h3{
 #event-wrapper ul .room-presidio{border-color: #74C499;}
 #event-wrapper ul .room-pacific-heights{border-color: #C1C09B;}
 #event-wrapper ul .room-marina{border-color: #005D66;}
+#event-wrapper ul .room-grand-ballroom{border-color: #F29966;}
 
 /* @group Header */
 header{
@@ -194,11 +195,36 @@ section{
 	display: block;
 }
 #event-details .speaker-name{
+	display: block;
 	font-weight: bold;
-	float: left;
-	margin: 21px 0 2px 18px;
+	margin: 21px 0 5px 18px;
 	font-size: 16px;
 	font-style: italic;
+}
+#event-details .event-info{
+	float: left;
+}
+#event-details .event-info-solo{
+	float: left;
+	clear: left;
+	padding: 30px 0;
+}
+#event-details .event-info-solo .event-date,
+#event-details .event-info-solo .event-time,
+#event-details .event-info-solo .event-room{
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0;
+}
+#event-details .event-date,
+#event-details .event-time,
+#event-details .event-room{
+	display: block;
+	margin: 0 0 0 18px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #5FA4A0;
+	font-weight: bold;
 }
 #event-details .speaker-company,
 #event-details .speaker-title{

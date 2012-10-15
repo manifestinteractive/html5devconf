@@ -167,8 +167,8 @@ section{
 }
 #event-details .event-title{
 	font-weight: bold;
-	font-size: 16px;
-	line-height: 22px;
+	font-size: 20px;
+	line-height: 26px;
 	margin: 0 0 5px;
 	clear: both;
 }
@@ -177,6 +177,7 @@ section{
 }
 #event-details .speaker-pic{
 	float: left;
+	clear: left;
 	width: 95px;
 	height: 95px;
 	overflow: hidden;
@@ -190,7 +191,10 @@ section{
 }
 #event-details .speaker-name{
 	font-weight: bold;
-	margin: 0 0 2px;
+	float: left;
+	margin: 21px 0 2px 18px;
+	font-size: 16px;
+	font-style: italic;
 }
 #event-details .speaker-company,
 #event-details .speaker-title{

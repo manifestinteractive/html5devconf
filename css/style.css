@@ -123,6 +123,21 @@ section{
 	cursor:pointer;
 	cursor:hand;
 }
+#event-wrapper .room-tag{
+	position:absolute;
+	right:0;
+	top:0;
+	padding:1px 5px 1px; 
+	line-height:12px; 
+	border-bottom-left-radius:5px;
+	background:#eee;
+	border:1px solid #dedede;
+	border-top:0;
+	border-right:0;
+	font-size:11px;
+	color:#666;
+	box-shadow: -1px 1px 3px rgba(0,0,0,.05);
+}
 #event-wrapper .event{
 	border-left: 8px solid transparent;
 	padding: 10px 5px 10px 0;

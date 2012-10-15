@@ -38,6 +38,7 @@ h3{
 	font-size: 15px;
 	line-height: 25px;
 	color: #5FA4A0;
+	margin: 10px 0 5px 0;
 }
 
 #loader {
@@ -147,6 +148,7 @@ section{
 }
 #event-wrapper .checked:before {
    content:  "\2713 ";
+   alignment-baseline: baseline;
 }
 /* @end */
 /* @group */
@@ -165,6 +167,9 @@ section{
 }
 #event-details .event-title{
 	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 0 5px;
 	clear: both;
 }
 #event-details .event-description{
@@ -263,7 +268,11 @@ section.flip #event-details {
 }
 
 /* @group media queries for mobile */
-.room-tag{
-	display: none;
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.room-tag{
+		display: none;
+	}
 }
 /* @end */

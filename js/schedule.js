@@ -20,8 +20,8 @@ var html5devconf_data = {
     },
     {
         "id" : 3,
-        "title" : "Break",
-        "description" : "Refreshments for all provided on the 2nd floor",
+        "title" : "Break <span class='secondary'>(Refreshments for all provided on the 2nd floor)</span>",
+        "description" : "",
         "room" : "",
         "time" : "10:00am - 10:30am",
         "sponsor" : "",
@@ -29,8 +29,8 @@ var html5devconf_data = {
     },
     {
         "id" : 4,
-        "title" : "Break",
-        "description" : "Refreshments for all provided on the 2nd floor",
+        "title" : "Break <span class='secondary'>(Refreshments for all provided on the 2nd floor)</span>",
+        "description" : "",
         "room" : "",
         "time" : "10:00am - 10:30am",
         "sponsor" : "",
@@ -38,8 +38,8 @@ var html5devconf_data = {
     },
     {
         "id" : 5,
-        "title" : "Break",
-        "description" : "Refreshments for all provided on the 2nd floor",
+        "title" : "Break <span class='secondary'>(Refreshments for all provided on the 2nd floor)</span>",
+        "description" : "",
         "room" : "",
         "time" : "3:10pm - 3:40pm",
         "sponsor" : "",
@@ -47,8 +47,8 @@ var html5devconf_data = {
     },
     {
         "id" : 6,
-        "title" : "Break",
-        "description" : "Refreshments for all provided on the 2nd floor",
+        "title" : "Break <span class='secondary'>(Refreshments for all provided on the 2nd floor)</span>",
+        "description" : "",
         "room" : "",
         "time" : "3:10pm - 3:40pm",
         "sponsor" : "",
@@ -56,8 +56,8 @@ var html5devconf_data = {
     },
     {
         "id" : 7,
-        "title" : "Lunch",
-        "description" : "Those that purchased lunch will be hosted in the French Parlor room",
+        "title" : "Lunch <span class='secondary'>(Those that purchased lunch will be hosted in the French Parlor room)</span>",
+        "description" : "",
         "room" : "",
         "time" : "12:20pm - 1:20pm",
         "sponsor" : "",
@@ -65,8 +65,8 @@ var html5devconf_data = {
     },
     {
         "id" : 8,
-        "title" : "Lunch",
-        "description" : "Those that purchased lunch will be hosted in the French Parlor room",
+        "title" : "Lunch <span class='secondary'>(Those that purchased lunch will be hosted in the French Parlor room)</span>",
+        "description" : "",
         "room" : "",
         "time" : "12:20pm - 1:20pm",
         "sponsor" : "",
@@ -81,24 +81,6 @@ var html5devconf_data = {
         },
         "description" : "We rarely talk about the actual mechanics of how we develop webapps, but in this session, we'll get into some new techniques  people use to improve their experience. Iterating faster, avoiding bugs through tools, and improved automated testing are great ideas, but in this talk we'll see how to really incorporate them into a functional and realistic developer workflow.",
         "room" : "Grand Ballroom",
-        "time" : "9:00am - 10:00am",
-        "sponsor" : "",
-        "day" : 2
-    },
-    {
-        "id" : 10,
-        "title" : "Keynote Simulcast",
-        "description" : "",
-        "room" : "Gold Ballroom",
-        "time" : "9:00am - 10:00am",
-        "sponsor" : "",
-        "day" : 1
-    },
-    {
-        "id" : 11,
-        "title" : "Keynote Simulcast",
-        "description" : "",
-        "room" : "Gold Ballroom",
         "time" : "9:00am - 10:00am",
         "sponsor" : "",
         "day" : 2
@@ -120,10 +102,10 @@ var html5devconf_data = {
         "id" : 13,
         "title" : "The Beauty of Constraints",
         "speaker" : {
-            "name" : "Faruk Ateş",
+            "name" : "Faruk Ates",
             "image" : "http://html5devconf.com/img/headshots/faruk_ates.jpg"
         },
-        "description" : "Making any product is an exciting as well as challenging endeavor, especially in technology and software. As humans we are prone to let our creativity run free — but freedom is not always the best solution to solving problems. Sometimes we need constraints more than anything else to truly ignite our creativity.In his session, Faruk will talk about the values and lessons learned from imposing (sometimes arbitrary) constraints on projects, applied against UI, software, and API design.",
+        "description" : "Making any product is an exciting as well as challenging endeavor, especially in technology and software. As humans we are prone to let our creativity run free - but freedom is not always the best solution to solving problems. Sometimes we need constraints more than anything else to truly ignite our creativity.In his session, Faruk will talk about the values and lessons learned from imposing (sometimes arbitrary) constraints on projects, applied against UI, software, and API design.",
         "room" : "Grand Ballroom",
         "time" : "10:30am - 11:20am",
         "sponsor" : "",
@@ -253,7 +235,7 @@ var html5devconf_data = {
             "name" : "Brian Rinaldi",
             "image" : "http://html5devconf.com/img/headshots/brian_rinaldi.jpg"
         },
-        "description" : "Using the architecture of Brackets, the open source code editor created by Adobe, as a guide,  this session will examine some best practices for architecting well designed, modern applications using HTML, CSS, and JavaScript. We’ll examine how this large-scale, open-source project built with web technologies was architected to handle contributions from a significant number of developers and what kind of lessons you can apply to your own development projects. In addition, you’ll learn how you can contribute to the development of this code editor for web technologies.",
+        "description" : "Using the architecture of Brackets, the open source code editor created by Adobe, as a guide,  this session will examine some best practices for architecting well designed, modern applications using HTML, CSS, and JavaScript. We'll examine how this large-scale, open-source project built with web technologies was architected to handle contributions from a significant number of developers and what kind of lessons you can apply to your own development projects. In addition, you'll learn how you can contribute to the development of this code editor for web technologies.",
         "room" : "Grand Ballroom (Concert)",
         "time" : "4:40pm - 5:30pm",
         "sponsor" : "",
@@ -318,7 +300,7 @@ var html5devconf_data = {
             "name" : "Sergio Costa",
             "image" : "http://html5devconf.com/img/headshots/sergio_costa.jpg"
         },
-        "description" : "Realtime, recently launched in the US, has over 2,000 clients using its Messaging System and Framework and Sergio Costa, the company’s Developer Evangelist has been involved with most.  Join Sergio as he introduces for the first time in the US, the Realtime tools (http://www.realtime.co/users/xrtml) that allow developers to quickly start building their real-time, cross-platform, cross-browser applications and websites using a one-to-one/one-to-many/many-to-many pub/sub-messaging system. The Framework handles all the dirty work for developers allowing them to focus on building applications. HTML5's best friend will help you build the next-generation web and mobile applications today.",
+        "description" : "Realtime, recently launched in the US, has over 2,000 clients using its Messaging System and Framework and Sergio Costa, the company's Developer Evangelist has been involved with most.  Join Sergio as he introduces for the first time in the US, the Realtime tools (http://www.realtime.co/users/xrtml) that allow developers to quickly start building their real-time, cross-platform, cross-browser applications and websites using a one-to-one/one-to-many/many-to-many pub/sub-messaging system. The Framework handles all the dirty work for developers allowing them to focus on building applications. HTML5's best friend will help you build the next-generation web and mobile applications today.",
         "room" : "Marina",
         "time" : "1:20pm - 2:10pm",
         "sponsor" : "",
@@ -326,12 +308,12 @@ var html5devconf_data = {
     },
     {
         "id" : 29,
-        "title" : "Hands-On Workshop - Developing with Realtime’s xRTML",
+        "title" : "Hands-On Workshop - Developing with Realtime's xRTML",
         "speaker" : {
             "name" : "Sérgio Costa",
             "image" : ""
         },
-        "description" : "Working with Realtime's Developer Evangelist, Sérgio Costa, you’ll leave with the solid foundation needed to begin adding real-time apps to your website and mobile projects regardless of platform or browser you use.  During the two-hour workshop, you'll learn about Realtime’s Framework scalability, get an in-depth knowledge of the security layer, understand how xRTML can further speed up the development process and everything else you need to know to start building your prototypes and full-fledged applications immediately. Bring your laptop with a web server (IIS, Apache or XAMPP works great) and your favorite HTML editor installed, so you can get your hands on the future of the web today.",
+        "description" : "Working with Realtime's Developer Evangelist, Sérgio Costa, you'll leave with the solid foundation needed to begin adding real-time apps to your website and mobile projects regardless of platform or browser you use.  During the two-hour workshop, you'll learn about Realtime's Framework scalability, get an in-depth knowledge of the security layer, understand how xRTML can further speed up the development process and everything else you need to know to start building your prototypes and full-fledged applications immediately. Bring your laptop with a web server (IIS, Apache or XAMPP works great) and your favorite HTML editor installed, so you can get your hands on the future of the web today.",
         "room" : "Gold Ballroom",
         "time" : "11:30am - 12:20pm",
         "sponsor" : "",
@@ -395,7 +377,7 @@ var html5devconf_data = {
             "name" : "Steve Newcomb",
             "image" : "http://html5devconf.com/img/headshots/steve_newcomb.jpg"
         },
-        "description" : "There has been much debate about HTML5 mobile apps and performance. This Summer, Facebook announced it’s pulling out of HTML5 and moving back to native because of performance issues.  What does this mean for the future of Web Apps?  After nearly 2 years of focused research on the underlying causes of web app performance problems, Steve Newcomb, shares his team’s key findings in a frank, pragmatic and informative discussion designed to help developers get their arms around the key issues.  In addition, Steve will be sharing a demo that breaths new life into what web app performance can look like if these key issues are addressed.",
+        "description" : "There has been much debate about HTML5 mobile apps and performance. This Summer, Facebook announced it's pulling out of HTML5 and moving back to native because of performance issues.  What does this mean for the future of Web Apps?  After nearly 2 years of focused research on the underlying causes of web app performance problems, Steve Newcomb, shares his team's key findings in a frank, pragmatic and informative discussion designed to help developers get their arms around the key issues.  In addition, Steve will be sharing a demo that breaths new life into what web app performance can look like if these key issues are addressed.",
         "room" : "Grand Ballroom (Concert)",
         "time" : "3:40 - 4:30pm",
         "sponsor" : "",
@@ -445,7 +427,7 @@ var html5devconf_data = {
             "name" : "Mauvis Ledford",
             "image" : "http://html5devconf.com/img/headshots/mauvis_ledford.jpg"
         },
-        "description" : "Never has so much been made out of so little. In this session we take a deep dive into all 800 lines of the Backbone.js framework—the platform used to power some of the most popular sites and mobile sites today.  We analyze line-by-line the code that forms the building blocks of the framework and how they interact with underscore.js, Backbone's helper library, throwing in some tips and tricks on the way. Suitable for new and advanced Backbone users.",
+        "description" : "Never has so much been made out of so little. In this session we take a deep dive into all 800 lines of the Backbone.js framework-the platform used to power some of the most popular sites and mobile sites today.  We analyze line-by-line the code that forms the building blocks of the framework and how they interact with underscore.js, Backbone's helper library, throwing in some tips and tricks on the way. Suitable for new and advanced Backbone users.",
         "room" : "Sea Cliff",
         "time" : "2:20pm - 3:10pm",
         "sponsor" : "",
@@ -744,7 +726,7 @@ var html5devconf_data = {
             "name" : "Adron Hall",
             "image" : "http://html5devconf.com/img/headshots/adron_hall.jpg"
         },
-        "description" : "In this presentation I cover the idea, practices and tools used to implement a continuous delivery effort in the development of software. I start off by introducing the topic, but am sure to provide a “checks and balances” approach to what we as developers can’t forget when moving forward with continuous delivery. Then I leap into the tooling that makes continuous delivery workable and how to set it up with various languages all while providing examples with existing continuous delivery setups.",
+        "description" : "In this presentation I cover the idea, practices and tools used to implement a continuous delivery effort in the development of software. I start off by introducing the topic, but am sure to provide a \"checks and balances\" approach to what we as developers can't forget when moving forward with continuous delivery. Then I leap into the tooling that makes continuous delivery workable and how to set it up with various languages all while providing examples with existing continuous delivery setups.",
         "room" : "Presidio",
         "time" : "10:30am - 11:20am",
         "sponsor" : "",
@@ -757,7 +739,7 @@ var html5devconf_data = {
             "name" : "Robert Martone",
             "image" : "http://html5devconf.com/img/headshots/robert_martone.jpg"
         },
-        "description" : "Over the past year web development at LinkedIn has undergone great changes. In this session we’ll discuss the open source javascript library developers from LinkedIn have created as an answer to that changing landscape. Spoilers: It allows HTML authors to create rich interactivity purely through markup.",
+        "description" : "Over the past year web development at LinkedIn has undergone great changes. In this session we'll discuss the open source javascript library developers from LinkedIn have created as an answer to that changing landscape. Spoilers: It allows HTML authors to create rich interactivity purely through markup.",
         "room" : "Sea Cliff",
         "time" : "10:30am - 11:20am",
         "sponsor" : "",
@@ -822,7 +804,7 @@ var html5devconf_data = {
             "name" : "Eric Elliott",
             "image" : "http://html5devconf.com/img/headshots/eric_elliott.jpg"
         },
-        "description" : "It’s 7:15 AM, and a fresh retail startup is about to get featured on Good Morning America. The ops team is ready. 25 extra web servers have been fired up to handle the extra volume. The feature starts to air, and the traffic pours in. 2,000 simultaneous connections. then 3,000. Five minutes later there are 6,000 simultaneous connections, and thousands of stuffed shopping carts. The only problem is, items are suddenly being added to the wrong shopping carts. The support staff gets flooded with calls and complaints.What just happened? The extra web servers were generating hundreds of pseudo-random GUID per millisecond to identify each new shopping cart, and there wasn’t enough entropy across the different hosts to protect against id collisions. The team ended up with duplicate shopping cart identifiers, so when the app had to retrieve a shopping cart by ID, it served up the wrong one.",
+        "description" : "It's 7:15 AM, and a fresh retail startup is about to get featured on Good Morning America. The ops team is ready. 25 extra web servers have been fired up to handle the extra volume. The feature starts to air, and the traffic pours in. 2,000 simultaneous connections. then 3,000. Five minutes later there are 6,000 simultaneous connections, and thousands of stuffed shopping carts. The only problem is, items are suddenly being added to the wrong shopping carts. The support staff gets flooded with calls and complaints.What just happened? The extra web servers were generating hundreds of pseudo-random GUID per millisecond to identify each new shopping cart, and there wasn't enough entropy across the different hosts to protect against id collisions. The team ended up with duplicate shopping cart identifiers, so when the app had to retrieve a shopping cart by ID, it served up the wrong one.",
         "room" : "Pacific Heights",
         "time" : "2:20pm - 3:10pm",
         "sponsor" : "",
@@ -874,7 +856,7 @@ var html5devconf_data = {
             "name" : "Bill Pearson",
             "image" : "http://html5devconf.com/img/headshots/bill_pearson.jpg"
         },
-        "description" : "HTML5 is a hot buzzword – any more popular and we might start to see “HTML5 Cola” and a cereal with the tag line “HTML5: Breakfast of Coders!” But, alas, as with most new and emerging technologies, some aspects of the ecosystem are still coming together. Intel, as a platform-neutral supporter of HTML5, sees great promise in the Cross-Platform development approach. And, to help move past the early exuberance state into the “I wrote an HTML5 app that works” state, we are starting to add pieces to the puzzle on the table to make it easier for developers to both start learning about HTML5 and get going with real HTML5 applications. We are also working with other industry leaders to further support developers in this nascent space.",
+        "description" : "HTML5 is a hot buzzword – any more popular and we might start to see \"HTML5 Cola\" and a cereal with the tag line \"HTML5: Breakfast of Coders!\" But, alas, as with most new and emerging technologies, some aspects of the ecosystem are still coming together. Intel, as a platform-neutral supporter of HTML5, sees great promise in the Cross-Platform development approach. And, to help move past the early exuberance state into the \"I wrote an HTML5 app that works\" state, we are starting to add pieces to the puzzle on the table to make it easier for developers to both start learning about HTML5 and get going with real HTML5 applications. We are also working with other industry leaders to further support developers in this nascent space.",
         "room" : "Presidio",
         "time" : "11:30am - 12:20pm",
         "sponsor" : "",
@@ -1103,12 +1085,12 @@ var html5devconf_data = {
     },
     {
         "id" : 89,
-        "title" : "Developing A Web-Accessible Widget with HTML5’s ARIA",
+        "title" : "Developing A Web-Accessible Widget with HTML5's ARIA",
         "speaker" : {
             "name" : "Dennis Lembree",
             "image" : "http://html5devconf.com/img/headshots/dennis_lembree.jpg"
         },
-        "description" : "This presentation gives a brief introduction to HTML5’s ARIA (Accessible Rich Internet Applications) and web accessibility, then goes into an overview of creating and testing an accessible dropdown menu button. Topics discussed include ARIA roles, progressive enhancement, screen readers, and keyboard accessibility.",
+        "description" : "This presentation gives a brief introduction to HTML5's ARIA (Accessible Rich Internet Applications) and web accessibility, then goes into an overview of creating and testing an accessible dropdown menu button. Topics discussed include ARIA roles, progressive enhancement, screen readers, and keyboard accessibility.",
         "room" : "Marina",
         "time" : "11:30am - 12:20pm",
         "sponsor" : "",
@@ -1251,7 +1233,7 @@ var html5devconf_data = {
             "name" : "Tony Sukiennik",
             "image" : "http://html5devconf.com/img/headshots/tony_sukiennik.jpg"
         },
-        "description" : "Find out how you can scale to Millions of Users without ever have to even think about a Server Farm much less scaling one out…  A large set of Social Data problems can be solved without any Server Code…  Isn’t that one of the things HTML5 is all about?",
+        "description" : "Find out how you can scale to Millions of Users without ever have to even think about a Server Farm much less scaling one out…  A large set of Social Data problems can be solved without any Server Code…  Isn't that one of the things HTML5 is all about?",
         "room" : "Pacific Heights",
         "time" : "1:20pm - 2:10pm",
         "sponsor" : "",
@@ -1295,5 +1277,23 @@ var html5devconf_data = {
         "time" : "5:40 - 6:30pm",
         "sponsor" : "",
         "day" : 1
+    },
+    {
+        "id" : 10,
+        "title" : "Keynote Simulcast",
+        "description" : "",
+        "room" : "Gold Ballroom",
+        "time" : "9:00am - 10:00am",
+        "sponsor" : "",
+        "day" : 1
+    },
+    {
+        "id" : 11,
+        "title" : "Keynote Simulcast",
+        "description" : "",
+        "room" : "Gold Ballroom",
+        "time" : "9:00am - 10:00am",
+        "sponsor" : "",
+        "day" : 2
     }]
 };

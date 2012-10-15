@@ -68,9 +68,19 @@ var html5dev = (function(){
 		show_details: function(event_id)
 		{
 			// Populate the details div
-			var event_obj = _.find(html5devconf_data.schedule, function(event) { return event.id == event_id; });
+			var event_obj = _.find(html5devconf_data.schedule, function(event_item) { return event_item.id == event_id; });
 			
-			alert(event_obj.title);
+			$details = $('#event-details');
+			
+			$details.find('.event-title').text(event_obj.title);
+			$details.find('.event-description').text(event_obj.description);
+			
+			$details.find('.speaker-name').text(event_obj.speaker.name);
+			$details.find('.speaker-pic img').attr('src',event_obj.speaker.image);
+			
+			
+			
+			// alert(event_obj.title);
 			
 			jQuery('section').addClass('flip');
 			return false;

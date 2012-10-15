@@ -1,0 +1,14 @@
+/* TEAM */
+    HTML and Javascript: Peter Schmalfeldt
+    Twitter: @mrmidi
+
+    HTML and Javascript: John Kramlich
+    Twitter: @jkramlich
+
+    Javascript: Andy Blackwell
+
+    Web Designer and CSS: Jameson MacArthur
+
+/* THANKS */
+	Answers.com
+	

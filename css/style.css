@@ -19,6 +19,7 @@ ul{list-style-type: none;}
 
 body{
 	background: #141414;
+	background: #F8F8F8;
 	color: #141414;
 	font: 14px/18px normal 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
@@ -35,6 +36,11 @@ h3{
 	line-height: 25px;
 	color: #5FA4A0;
 }
+
+#loader {
+	text-align:center;
+}
+
 #event-wrapper ul .concert{border-color:#F29966;}
 #event-wrapper ul .rose{border-color:#CC9999;}
 #event-wrapper ul .gold{border-color: #CCAD5C;}
@@ -102,12 +108,93 @@ section{
 	width: 96%;
 	margin: 0 auto;
 }
-#event-wrapper .event_item{
+#event-wrapper ul ul ul{
+	width: 90%;
+	margin: 0 0 0 20px;
+}
+#event-wrapper .event-item{
 	border: 1px solid #DEDEDE;
+	position: relative;
+	margin-top: -1px;
+}
+#event-wrapper .event-item:hover{
+	cursor:pointer;
+	cursor:hand;
 }
 #event-wrapper .event{
 	border-left: 8px solid #fff;
 	padding: 10px 5px 10px 0;
+}
+#event-wrapper .event-title{
+	display: block;
+	font-weight: bold;
+	margin: 0 10px;
+}
+#event-wrapper .speaker-name,
+#event-wrapper .speaker-company{
+	color: #ACACAC;
+	font-size: 12px;
+	margin: 0 0 0 10px;
+}
+#event-wrapper .status{
+	position: absolute;
+	left: -25px;
+	top: 17px;
+	color: #5FA4A0;
+	font-size: 28px;
+}
+#event-wrapper .checked:before {
+   content:  "\2713 ";
+}
+/* @end */
+/* @group */
+#event-details{
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#event-details #interested-btn.active{
+	opacity: .7;
+}
+#event-details #interested-btn.active span:before{
+	content:  "\2713 ";
+	color: #5FA4A0;
+	margin: 0 5px 0 0;
+}
+#event-details .event-title{
+	font-weight: bold;
+	clear: both;
+}
+#event-details .event-description{
+	margin: 0 0 10px;
+}
+#event-details .speaker-pic{
+	float: left;
+	width: 95px;
+	height: 95px;
+	overflow: hidden;
+	margin: 0 10px 10px 0;
+}
+#event-details .speaker-pic img{
+	width: 95px;
+}
+#event-details .speaker span{
+	display: block;
+}
+#event-details .speaker-name{
+	font-weight: bold;
+}
+#event-details .speaker-company,
+#event-details .speaker-title{
+	font-size: 12px;
+	color: #ACACAC;
+}
+#event-details .pager{
+	float: left;
+}
+#event-details #actions{
+	float: right;
+	margin: 19px 0;
 }
 /* @end */
 

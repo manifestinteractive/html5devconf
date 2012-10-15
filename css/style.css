@@ -140,10 +140,10 @@ section{
 }
 #event-wrapper .status{
 	position: absolute;
-	left: -25px;
-	top: 17px;
+	left: -32px;
+	top: 12px;
 	color: #5FA4A0;
-	font-size: 28px;
+	font-size: 32px;
 }
 #event-wrapper .checked:before {
    content:  "\2713 ";
@@ -217,11 +217,11 @@ footer{
 	overflow: hidden;
 	background: #ACACAC;
 	font-size: 12px;
-	color: #141414;
+	color: #F8F8F8;
 	-moz-box-shadow: inset 0 -4px 20px rgba(0,0,0,0.2), 0 -1px 40px rgba(0, 0, 0, 0.4);
 	-webkit-box-shadow: inset 0 -4px 20px rgba(0,0,0,0.2), 0 -1px 40px rgba(0, 0, 0, 0.4);
 	box-shadow: inset 0 -4px 20px rgba(0,0,0,0.2), 0 -1px 40px rgba(0, 0, 0, 0.4);
-	text-shadow: 0 1px 1px rgba(255,255,255,0.2), 0 -1px 5px rgba(0,0,0,0.4);
+	text-shadow: inset 0 -4px 20px rgba(0, 0, 0, 0.25), 0 0px 5px rgba(0, 0, 0, 0.25);
 }
 
 /* @end */

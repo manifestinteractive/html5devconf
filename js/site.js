@@ -19,17 +19,17 @@ var html5dev = (function(){
 		init: function()
 		{
 			var store = null;
-	
+
 			if('localStorage' in window && window['localStorage'] !== null){
 				//store = window.localStorage;
 				//store.get('my_schedule');
 				//my_events = store.get('my_events');
 			}
-			
+
 			// Populate JSON object with user preferences for event attendence
-			
+
 			// Build HTML table
-			
+
 			var event_list_template = $('#event-list-template').html();
 			var $event_list = $('#event-list');
 			var time_blocks = [];
@@ -40,7 +40,7 @@ var html5dev = (function(){
 			}
 			var rendered_tpl = _.template(event_list_template, {title:'Day 1 - Monday October 15', time_blocks: time_blocks});
 			$( rendered_tpl ).appendTo($event_list);
-			
+
 			var time_blocks = [];
 			var sessions = _.filter(html5devconf_data.schedule, function(data) { return data.day == 2; });
 			for(i in html5devconf_data.time_blocks){
@@ -49,17 +49,17 @@ var html5dev = (function(){
 			}
 			var rendered_tpl = _.template(event_list_template, {title:'Day 2 - Monday October 16', time_blocks: time_blocks});
 			$( rendered_tpl ).appendTo($event_list);
-			
+
 			// Live bind click events to table items, bind on single element and let bubble up with nodetype detection
 			$('#event-wrapper').click(function(e){
 				var $event = $(e.target).closest('.event-item');
-				
+
 				if($event.length){
 					var id = $event.data('id');
 					html5dev.show_details(id);
 				}
 			});
-			
+
 			html5dev.update_layout();
 		},
 		update_layout: function()
@@ -68,25 +68,50 @@ var html5dev = (function(){
 		},
 		show_details: function(id)
 		{
+			jQuery('header, footer').hide();
+
 			var event_detail_template = $('#event-detail-template').html();
 			var event_detail = _.find(html5devconf_data.schedule, function(event_detail) { return event_detail.id == id; });
 			var rendered_tpl = _.template(event_detail_template, {data:event_detail});
 			$('#event-details').html(rendered_tpl);
 			jQuery('section').addClass('flip');
+
+
+
+			setTimeout(function(){
+				jQuery('#event-wrapper').hide();
+				jQuery('header, footer').slideDown(100);
+
+				html5dev.update_layout();
+			}, 400);
 			
-			window.location.hash = 'event-detail-' + id;
+			setTimeout(function(){ 
 			
-			setTimeout(function(){ jQuery('#event-wrapper').hide(); }, 250);
+				jQuery('body').scrollTop(0);
 			
+			}, 500);
+
 			events.analytics();
 		},
 		hide_details: function(id)
 		{
-			jQuery('#event-wrapper').show();
-			setTimeout(function(){ jQuery('section').removeClass('flip'); }, 250);
+			jQuery('header, footer').hide();
+			jQuery('section').removeClass('flip');
+
+			setTimeout(function(){
+				jQuery('#event-wrapper').show();
+				jQuery('header, footer').slideDown(100);
+
+				html5dev.update_layout();
+			}, 400);
 			
-			window.location.hash = 'event-' + id;
-			
+			setTimeout(function(){
+				
+				var offset = jQuery('#event_'+id).position();
+				jQuery('body').scrollTop(offset.top - 70);
+				
+			}, 500);
+
 			events.analytics();
 		}
 	}

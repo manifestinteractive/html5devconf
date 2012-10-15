@@ -71,8 +71,8 @@ header{
 	box-shadow: inset 0 -4px 16px rgba(229, 78, 38, 1), 0 1px 5px rgba(0, 0, 0, 0.25)
 }
 header h1{
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 18px;
+	line-height: 23px;
 	margin: 0;
 	padding: 0;
 	display: block;
@@ -104,6 +104,9 @@ section{
 	top: 30px;
 	left: 0;
 }
+#event-wrapper{
+	padding: 0 0 50px;
+}
 #event-wrapper ul{
 	padding: 0 10px;
 }
@@ -127,6 +130,7 @@ section{
 	display: block;
 	font-weight: bold;
 	margin: 0 10px;
+	margin-right: 140px;
 }
 #event-wrapper .speaker-name,
 #event-wrapper .speaker-company{
@@ -151,6 +155,7 @@ section{
 	width: 90%;
 	margin: 0 auto;
 	overflow: hidden;
+	padding: 0 0 50px;
 }
 #event-details #interested-btn.active{
 	opacity: .7;
@@ -255,7 +260,7 @@ section #event-details {
 	-webkit-transition: all .4s ease-in-out;
 	background: #F8F8F8;
 	width: 90%;
-	padding: 0 5%;
+	padding: 0 5% 50px 5%;
 }
 		
 section.flip #event-details {
@@ -268,6 +273,13 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 	.room-tag{
 		display: none;
+	}
+	header h1{
+		font-size: 14px;
+		line-height: 18px;
+	}
+	#event-wrapper .event-title{
+		margin-right: 0;
 	}
 }
 /* @end */

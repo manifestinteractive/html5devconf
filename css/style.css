@@ -15,11 +15,14 @@ input{font-family: verdana, sans-serif;}
 textarea{font-family: verdana, sans-serif;}
 p{line-height:1.4em;}
 a {color: #f36b22;text-decoration:none;outline: none;}
-ul{list-style-type: none;}
+ul{list-style-type: none;margin: 0;}
 
 body{
 	background: #141414;
 	background: #F8F8F8;
+	-moz-box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+	box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
 	color: #141414;
 	font: 14px/18px normal 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
@@ -89,22 +92,17 @@ section{
 	position: relative;
 	top: 27px; /* heading height + extra */
 	background: #F8F8F8;
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
-	-moz-box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
-	-webkit-box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
-	box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
 	float: none;
 	position: absolute;
 	top: 30px;
 	left: 0;
 }
 #event-wrapper ul{
-	width: 96%;
-	margin: 0 auto;
+	padding: 0 10px;
 }
 #event-wrapper ul ul ul{
-	width: 90%;
 	margin: 0 0 0 20px;
 }
 #event-wrapper .event-item{

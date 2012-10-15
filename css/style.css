@@ -19,6 +19,7 @@ ul{list-style-type: none;}
 
 body{
 	background: #141414;
+	background: #F8F8F8;
 	color: #141414;
 	font: 14px/18px normal 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
@@ -35,6 +36,11 @@ h3{
 	line-height: 25px;
 	color: #5FA4A0;
 }
+
+#loader {
+	text-align:center;
+}
+
 #event-wrapper ul .concert{border-color:#F29966;}
 #event-wrapper ul .rose{border-color:#CC9999;}
 #event-wrapper ul .gold{border-color: #CCAD5C;}
@@ -93,6 +99,10 @@ section{
 	-moz-box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
 	-webkit-box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
 	box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+	float: none;
+	position: absolute;
+	top: 30px;
+	left: 0;
 }
 #event-wrapper ul{
 	width: 96%;
@@ -106,6 +116,10 @@ section{
 	border: 1px solid #DEDEDE;
 	position: relative;
 	margin-top: -1px;
+}
+#event-wrapper .event-item:hover{
+	cursor:pointer;
+	cursor:hand;
 }
 #event-wrapper .event{
 	border-left: 8px solid #fff;
@@ -137,16 +151,10 @@ section{
 #event-details{
 	width: 90%;
 	margin: 0 auto;
-}
-#event-details #actions .btn-group{
-	margin: 0 0 20px;
+	overflow: hidden;
 }
 #event-details #interested-btn.active{
-	background-image: -webkit-linear-gradient(bottom,white,#E6E6E6);
-	background-image: -o-linear-gradient(bottom,white,#E6E6E6);
-	background-image: linear-gradient(to top,white,#E6E6E6);
-	background-image: -moz-linear-gradient(bottom,white,#E6E6E6);
-	background-repeat: repeat-x;
+	opacity: .7;
 }
 #event-details #interested-btn.active span:before{
 	content:  "\2713 ";
@@ -155,8 +163,39 @@ section{
 }
 #event-details .event-title{
 	font-weight: bold;
+	clear: both;
 }
-#event-details #interested-btn
+#event-details .event-description{
+	margin: 0 0 10px;
+}
+#event-details .speaker-pic{
+	float: left;
+	width: 95px;
+	height: 95px;
+	overflow: hidden;
+	margin: 0 10px 10px 0;
+}
+#event-details .speaker-pic img{
+	width: 95px;
+}
+#event-details .speaker span{
+	display: block;
+}
+#event-details .speaker-name{
+	font-weight: bold;
+}
+#event-details .speaker-company,
+#event-details .speaker-title{
+	font-size: 12px;
+	color: #ACACAC;
+}
+#event-details .pager{
+	float: left;
+}
+#event-details #actions{
+	float: right;
+	margin: 19px 0;
+}
 /* @end */
 
 /* @group Footer */
@@ -181,3 +220,37 @@ footer{
 
 /* @end */
 
+/* -- general styles, including Y axis rotation -- */
+section #event-wrapper {
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transform: rotateX(0deg) rotateY(0deg) translateZ(0);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden !important;
+	-webkit-transition: all .4s ease-in-out;
+	background: #F8F8F8;
+	width: 100%;
+}
+section.flip #event-wrapper {
+	-webkit-transform: rotateY(180deg) translateZ(0);
+}
+		
+section #event-details {
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden !important;
+	-webkit-transition: all .4s ease-in-out;
+	background: #F8F8F8;
+	width: 100%;
+}
+		
+section.flip #event-details {
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+}

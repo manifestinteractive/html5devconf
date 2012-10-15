@@ -63,7 +63,7 @@ var html5dev = (function(){
 		},
 		update_layout: function()
 		{
-			
+			window.scrollTo(0,1);
 		},
 		show_details: function(event_id)
 		{

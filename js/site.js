@@ -49,7 +49,6 @@ var html5dev = (function(){
 			var rendered_tpl = _.template(calendar_template, {title:'Day 2 - Monday October 16', time_blocks: time_blocks});
 			$( rendered_tpl ).appendTo($event_list);
 			
-			
 			// Live bind click events to table items, bind on single element and let bubble up with nodetype detection
 			$('#event-wrapper').click(function(e){
 				var $event = $(e.target).closest('.event-item');
@@ -65,6 +64,16 @@ var html5dev = (function(){
 		update_layout: function()
 		{
 			
+		},
+		show_details: function()
+		{
+			jQuery('section').addClass('flip');
+			return false;
+		},
+		hide_details: function()
+		{
+			jQuery('section').removeClass('flip');
+			return false;
 		}
 	}
 })();

@@ -73,13 +73,21 @@ var html5dev = (function(){
 			var rendered_tpl = _.template(event_detail_template, {data:event_detail});
 			$('#event-details').html(rendered_tpl);
 			jQuery('section').addClass('flip');
+			
+			window.location.hash = 'event-detail-' + id;
+			
 			setTimeout(function(){ jQuery('#event-wrapper').hide(); }, 250);
+			
+			events.analytics();
 		},
-		hide_details: function()
+		hide_details: function(id)
 		{
 			jQuery('#event-wrapper').show();
 			setTimeout(function(){ jQuery('section').removeClass('flip'); }, 250);
 			
+			window.location.hash = 'event-' + id;
+			
+			events.analytics();
 		}
 	}
 })();

@@ -31,11 +31,24 @@ var html5dev = (function(){
 			
 			// Live bind click events to table items, bind on single element and let bubble up with nodetype detection
 			
+			
+			
+			
 			html5dev.update_layout();
 		},
 		update_layout: function()
 		{
 			
+		},
+		show_details: function()
+		{
+			jQuery('section').addClass('flip');
+			return false;
+		},
+		hide_details: function()
+		{
+			jQuery('section').removeClass('flip');
+			return false;
 		}
 	}
 })();

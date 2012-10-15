@@ -744,7 +744,7 @@ var html5devconf_data = {
             "name" : "Adron Hall",
             "image" : "http://html5devconf.com/img/headshots/adron_hall.jpg"
         },
-        "description" : "In this presentation I cover the idea, practices and tools used to implement a continuous delivery effort in the development of software. I start off by introducing the topic, but am sure to provide a “checks and balances” approach to what we as developers can't forget when moving forward with continuous delivery. Then I leap into the tooling that makes continuous delivery workable and how to set it up with various languages all while providing examples with existing continuous delivery setups.",
+        "description" : "In this presentation I cover the idea, practices and tools used to implement a continuous delivery effort in the development of software. I start off by introducing the topic, but am sure to provide a \"checks and balances\" approach to what we as developers can't forget when moving forward with continuous delivery. Then I leap into the tooling that makes continuous delivery workable and how to set it up with various languages all while providing examples with existing continuous delivery setups.",
         "room" : "Presidio",
         "time" : "10:30am - 11:20am",
         "sponsor" : "",
@@ -874,7 +874,7 @@ var html5devconf_data = {
             "name" : "Bill Pearson",
             "image" : "http://html5devconf.com/img/headshots/bill_pearson.jpg"
         },
-        "description" : "HTML5 is a hot buzzword – any more popular and we might start to see “HTML5 Cola” and a cereal with the tag line “HTML5: Breakfast of Coders!” But, alas, as with most new and emerging technologies, some aspects of the ecosystem are still coming together. Intel, as a platform-neutral supporter of HTML5, sees great promise in the Cross-Platform development approach. And, to help move past the early exuberance state into the “I wrote an HTML5 app that works” state, we are starting to add pieces to the puzzle on the table to make it easier for developers to both start learning about HTML5 and get going with real HTML5 applications. We are also working with other industry leaders to further support developers in this nascent space.",
+        "description" : "HTML5 is a hot buzzword – any more popular and we might start to see \"HTML5 Cola\" and a cereal with the tag line \"HTML5: Breakfast of Coders!\" But, alas, as with most new and emerging technologies, some aspects of the ecosystem are still coming together. Intel, as a platform-neutral supporter of HTML5, sees great promise in the Cross-Platform development approach. And, to help move past the early exuberance state into the \"I wrote an HTML5 app that works\" state, we are starting to add pieces to the puzzle on the table to make it easier for developers to both start learning about HTML5 and get going with real HTML5 applications. We are also working with other industry leaders to further support developers in this nascent space.",
         "room" : "Presidio",
         "time" : "11:30am - 12:20pm",
         "sponsor" : "",

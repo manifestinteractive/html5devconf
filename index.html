@@ -34,50 +34,12 @@
 			</h1>
 		</header>
 		
-		<section>
+		<section id="main-content">
+			
 			<div id="event-wrapper">
-	            <ul>
-	                <li>
-	                    <h2>Day 1 - Monday October 15</h2>
-	                    <ul>
-	                        <li>
-	                            <h3>8:00am - 9:00am</h3>
-	                            <ul>
-	                                <li class="event-item">
-	                                    <div class="event concert">
-	                                        <span class="status">&nbsp;</span>
-	                                        <span class="event-title">Cache is King</span>
-	                                        <span class="speaker-name">Paul Irish</span><span class="speaker-company">Google</span>
-	                                    </div>
-	                                   
-	                                </li>
-	                                <li class="event-item">
-	                                    <div class="event rose">
-	                                        <span class="status checked">&nbsp;</span>
-	                                        <span class="event-title">The Beauty of Constraints</span>
-	                                        <span class="speaker-name">Faruk Ates</span><span class="speaker-company">TripLingo</span>
-	                                    </div>
-	                                </li>
-	                                <li class="event-item">
-	                                    <div class="event gold">
-	                                        <span class="status checked">&nbsp;</span>
-	                                        <span class="event-title">Cache is King</span>
-	                                        <span class="speaker-name">Paul Irish</span><span class="speaker-company"></span>
-	                                    </div>
-	                                </li>
-	                                <li class="event-item">
-	                                    <div class="event zen">
-	                                        <span class="status">&nbsp;</span>
-	                                        <span class="event-title">Cache is King</span>
-	                                        <span class="speaker-name">Paul Irish</span><span class="speaker-company"></span>
-	                                    </div>
-	                                </li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </li>
-	            </ul>
-	        </div>
+				<ul id="event-list">
+				</ul>
+			</div>
 	        
 	        <div id="event-details">
 	            <ul class="pager">
@@ -109,6 +71,7 @@
 	                
 	            </div>    
 	        </div>
+			
 		</section>
 		
 		 
@@ -117,11 +80,43 @@
 			Brought to you by Answers.com
 		</footer>
 			
+		<script id="calendar-template" type="template/javascript">
+			<li>
+				<h2><%= title ? title : '' %></h2>
+				<ul>
+					<% _.forEach(time_blocks, function(data) { %>
+					<li>
+						<h3><%= data.time ? data.time : '' %></h3>
+						<ul>
+							<% _.forEach(data.sessions, function(session) { %>
+							<li class="event-item">
+								<% if(session.room){ %>
+								<h4>Room: <b><%= session.room %></b><h4>
+								<% } %>
+								<div class="event room-<%= session.room ? session.room.toLowerCase().replace(/[^a-z0-9]/,'-') : '' %>">
+									<span class="status">&nbsp;</span>
+									<span class="event-title"><em><%= session.title %></em></span>
+									<% if(session.speaker && session.speaker.name){ %>
+									<span class="speaker-name"><%= session.speaker.name %></span>
+									<% } %>
+									<% if(session.sponsor){ %>
+									<span class="speaker-company"><%= session.sponsor %></span>
+									<% } %>
+								</div>
+							</li>
+							<% }); %>
+						</ul>
+					</li>
+					<% }); %>
+				</ul>
+			</li>
+		</script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="/js/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="js/schedule.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/lodash.min.js"></script>
 		<script src="js/site.js"></script>
-		
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];

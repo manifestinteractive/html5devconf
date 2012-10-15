@@ -50,11 +50,24 @@ var html5dev = (function(){
 			var rendered_tpl = _.template(calendar_template, {title:'Day 2 - Monday October 16', time_blocks: time_blocks});
 			$( rendered_tpl ).appendTo($event_list);
 			
+			
+			
+			
 			html5dev.update_layout();
 		},
 		update_layout: function()
 		{
 			
+		},
+		show_details: function()
+		{
+			jQuery('section').addClass('flip');
+			return false;
+		},
+		hide_details: function()
+		{
+			jQuery('section').removeClass('flip');
+			return false;
 		}
 	}
 })();

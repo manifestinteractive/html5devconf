@@ -26,22 +26,22 @@ a,a:hover{
 	color: #ED4732;
 	text-decoration: none;
 }
-.event-wrapper ul{
-	width: 96%;
-	background: #F8F8F8;
+h2{
+	font-size: 18px;
+	line-height: 28px;
 }
-.event-wrapper ul li{
-	border-left: 8px solid #fff;
-	padding: 10px 5px;
-	margin-left: 20px;
+h3{
+	font-size: 15px;
+	line-height: 25px;
+	color: #5FA4A0;
 }
-.event-wrapper ul .concert{border-color:#F29966;}
-.event-wrapper ul .rose{border-color:#CC9999;}
-.event-wrapper ul .gold{border-color: #CCAD5C;}
-.event-wrapper ul .sea{border-color: #005680;}
-.event-wrapper ul .zen{border-color: #74C499;}
-.event-wrapper ul .adobe{border-color: #C1C09B;}
-.event-wrapper ul .marina{border-color: #005D66;}
+#event-wrapper ul .concert{border-color:#F29966;}
+#event-wrapper ul .rose{border-color:#CC9999;}
+#event-wrapper ul .gold{border-color: #CCAD5C;}
+#event-wrapper ul .sea{border-color: #005680;}
+#event-wrapper ul .zen{border-color: #74C499;}
+#event-wrapper ul .adobe{border-color: #C1C09B;}
+#event-wrapper ul .marina{border-color: #005D66;}
 
 /* @group Header */
 header{
@@ -52,14 +52,14 @@ header{
 	left: 0;
 	width: 100%;
 	z-index: 10000;
-	-moz-box-shadow: inset -4px -4px 16px rgba(0,0,0,0.5);
-	-webkit-box-shadow: inset -4px -4px 16px rgba(0,0,0,0.5);
-	box-shadow: inset -4px -4px 16px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 -4px 16px rgba(0,0,0,0.5), 0 1px 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 -4px 16px rgba(0,0,0,0.5), 0 1px 5px rgba(0,0,0,0.5);
+	box-shadow: inset 0 -4px 16px rgba(0,0,0,0.5), 0 1px 5px rgba(0,0,0,0.5);
 	background: #ED4732;
 	min-height: 22px;
-	padding: 6px 0 0 20px;
+	padding: 6px 0 0;
 	color: #F8F8F8;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.5), 0 -1px 1px, 0 -1px 1px rgba(0,0,0,0.5), 0 -1px 1px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5), 0 -1px 1px, 0 -1px 1px rgba(0,0,0,0.5);
 }
 header h1{
 	font-size: 14px;
@@ -81,6 +81,32 @@ header a:hover{
 }
 /* @end */
 
+/* @group Main sections */
+section{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 27px; /* heading height + extra */
+	background: #F8F8F8;
+	width: 95%;
+	margin: 0 auto;
+	-moz-box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+	-webkit-box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+	box-shadow: inset 0 0 25px rgba(0,0,0,0.2);
+}
+#event-wrapper ul{
+	width: 96%;
+	margin: 0 auto;
+}
+#event-wrapper .event_item{
+	border: 1px solid #DEDEDE;
+}
+#event-wrapper .event{
+	border-left: 8px solid #fff;
+	padding: 10px 5px 10px 0;
+}
+/* @end */
+
 /* @group Footer */
 footer{
 	text-align: center;
@@ -95,21 +121,11 @@ footer{
 	background: #ACACAC;
 	font-size: 12px;
 	color: #141414;
-	-moz-box-shadow: inset -4px -4px 20px rgba(0,0,0,0.5);
-	-webkit-box-shadow: inset -4px -4px 20px rgba(0,0,0,0.5);
-	box-shadow: inset -4px -4px 20px rgba(0,0,0,0.5);
-	text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+	-moz-box-shadow: inset 0 -4px 20px rgba(0,0,0,0.5), 0 -1px 40px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0 -4px 20px rgba(0,0,0,0.5), 0 -1px 40px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0 -4px 20px rgba(0,0,0,0.5), 0 -1px 40px rgba(0, 0, 0, 0.4);
+	text-shadow: 0 1px 1px rgba(255,255,255,0.5), 0 -1px 5px rgba(0,0,0,0.5);
 }
 
 /* @end */
 
-/* @group Footer */
-section{
-	margin: 0;
-	padding: 0;
-	position: relative;
-	top: 70px; /* heading height + extra */
-	background: white;
-}
-
-/* @end */

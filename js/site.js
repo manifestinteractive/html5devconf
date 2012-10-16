@@ -43,7 +43,7 @@ var html5dev = (function(){
 				if( time_block ) time_blocks.push({ time:html5devconf_data.time_blocks[i], sessions:time_block});
 			}
 			var rendered_tpl = _.template(event_list_template, {title:'Day 1 - Monday October 15', time_blocks: time_blocks});
-			$( rendered_tpl ).appendTo($event_list);
+			$( rendered_tpl ).appendTo($event_list).addClass('day1');
 
 			var time_blocks = [];
 			var sessions = _.filter(html5devconf_data.schedule, function(data) { return data.day == 2; });
@@ -85,6 +85,9 @@ var html5dev = (function(){
 		update_layout: function()
 		{
 			window.scrollTo(0,1);
+			setTimeout(function(){
+				var position = jQuery('#event-list > li:nth-child(2)').position(); jQuery('body').scrollTop(position.top);
+			}, 250);
 		},
 		show_details: function(id)
 		{
@@ -101,14 +104,10 @@ var html5dev = (function(){
 			setTimeout(function(){
 				jQuery('#event-wrapper').hide();
 				jQuery('header, footer').slideDown(100);
-
-				html5dev.update_layout();
 			}, 400);
 			
 			setTimeout(function(){ 
-			
 				jQuery('body').scrollTop(0);
-			
 			}, 500);
 
 			events.analytics();
@@ -121,15 +120,11 @@ var html5dev = (function(){
 			setTimeout(function(){
 				jQuery('#event-wrapper').show();
 				jQuery('header, footer').slideDown(100);
-
-				html5dev.update_layout();
 			}, 400);
 			
 			setTimeout(function(){
-				
 				var offset = jQuery('#event_'+id).position();
 				jQuery('body').scrollTop(offset.top - 70);
-				
 			}, 500);
 
 			events.analytics();

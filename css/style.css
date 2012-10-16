@@ -351,3 +351,8 @@ and (max-device-width : 480px) {
 {
 	color: #444;
 }
+
+.day1
+{
+	opacity: 0.25;
+}
